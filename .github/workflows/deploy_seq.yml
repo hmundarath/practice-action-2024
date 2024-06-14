@@ -1,4 +1,4 @@
-name: Lint, test and deploy project
+name: Sequential execution
 on: push
 jobs:
     lint_test:
