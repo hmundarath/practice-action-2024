@@ -12,6 +12,9 @@ jobs:
               with:
                node-version: 18
 
+            - name: install dependencies
+              run: npm ci
+
             - name: lint code
               run: npm run lint
 
