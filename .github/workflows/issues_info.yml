@@ -1,0 +1,11 @@
+name: Issues trigger and info
+on: 
+    issues:
+        types: [opened]
+
+jobs:
+    info:
+        runs-on: ubuntu-latest
+        steps:
+            - name: get context
+              run: echo "${{ toJson(github) }}"
